@@ -2,6 +2,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, JetBrains Mono NL;
     font-size: 14px;
+    margin: 0;
 }
 
 window#waybar {
@@ -105,7 +106,7 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     color: #6dbabf;
-    background-color: rgba(59, 66, 82, 0.9);
+    background-color: rgba(59, 66, 82, 1.0);
     border-radius: 3px;
 }
 
@@ -120,7 +121,7 @@ button:hover {
 }
 
 #clock {
-    background-color: rgba(59, 66, 82, 0.9);
+    background-color: rgba(59, 66, 82, 1.0);
     color: #6dbabf;
     font-family: JetBrains Mono NL Bold;
     font-size: 16px;
@@ -129,7 +130,7 @@ button:hover {
 }
 
 #battery {
-    background-color: rgba(23, 70, 94, 0.9);
+    background-color: rgba(23, 70, 94, 1.0);
     color: #6dbabf;
     font-family: JetBrains Mono NL;
     font-size: 15px;
@@ -139,11 +140,11 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #6dbabf;
-    background-color: rgba(23, 70, 94, 0.9);
+    background-color: rgba(23, 70, 94, 1.0);
     font-family: JetBrains Mono NL;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 500px;    
+    /*border-radius: 500px;*/    
 }
 
 @keyframes blink {
@@ -179,7 +180,7 @@ label:focus {
 }
 
 #backlight {
-    background-color: rgba(59, 66, 82, 0.9);
+    background-color: rgba(59, 66, 82, 1.0);
     color: #6dbabf;
     font-family: JetBrains Mono NL;
     font-size: 15px;
@@ -188,7 +189,7 @@ label:focus {
 
 #network {
     color: #6dbabf;
-    background-color: rgba(23, 70, 94, 0.9);
+    background-color: rgba(23, 70, 94, 1.0);
     font-family: JetBrains Mono NL;
     font-size: 15px;
     font-weight: bold;
@@ -199,7 +200,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: rgba(59, 66, 82, 0.9);
+    background-color: rgba(59, 66, 82, 1.0);
     color: #6dbabf;
     font-family: JetBrains Mono NL;
     font-size: 15px;
@@ -312,4 +313,22 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+
+#custom-arrow1 {
+	font-size: 16pt;
+	background-color: rgba(23, 70, 94, 1.0); 
+	color: rgba(59, 66, 82, 1.0);
+}
+
+#custom-arrow2 {
+	font-size: 16pt;
+	background-color: rgba(59, 66, 82, 1.0);
+	color: rgba(23, 70, 94, 1.0);
+}
+
+#custom-arrow3 {
+	font-size: 16pt;
+	background-color: rgba(23, 70, 94, 0.0); 
+	color: rgba(59, 66, 82, 1.0);
 }
