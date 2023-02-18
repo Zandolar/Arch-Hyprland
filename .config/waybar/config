@@ -6,7 +6,7 @@
     "spacing": -0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    "modules-center": [],
+    "modules-center": ["hyprlandw/window"],
     "modules-right": ["tray", "custom/arrow3", "pulseaudio", "custom/arrow2", "network", "custom/arrow1", "backlight", "keyboard-state", "sway/language", "custom/arrow2", "battery", "battery#bat2", "custom/arrow1", "clock"],
     // Modules configuration
      "wlr/workspaces": {
@@ -141,9 +141,9 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
