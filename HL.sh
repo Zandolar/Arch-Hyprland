@@ -8,12 +8,13 @@ export XCURSOR_THEME=Nordzy-cursors
 export XCURSOR_SIZE=28
 
 # Wayland stuff
+export QT_PLUGIN_PATH=/usr/lib/qt/plugins
 export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORM=wayland
+#export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export CLUTTER_BACKEND=wayland
 
-exec Hyprland
+exec systemd-cat --identifier=hyprland /usr/bin/Hyprland $@
 

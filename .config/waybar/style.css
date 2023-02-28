@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, JetBrains Mono NL;
+    font-family: FontAwesome, JetBrains Mono NF, C059;
     font-size: 14px;
     margin: 0;
 }
@@ -56,6 +56,7 @@ button:hover {
     color: #6dbabf;
     font-size: 25px;
     border-radius: 5px;
+    font-family: C059
 }
 
 #workspaces button label {
@@ -102,9 +103,9 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
-    font-family: JetBrains Mono NL Bold;
     font-size: 18px;
     font-weight: bold;
+    font-family: C059;
     color: #6dbabf;
     background-color: rgba(59, 66, 82, 1.0);
     border-radius: 3px;
@@ -123,7 +124,7 @@ button:hover {
 #clock {
     background-color: rgba(59, 66, 82, 1.0);
     color: #6dbabf;
-    font-family: JetBrains Mono NL Bold;
+    font-family: JetBrains Mono NF Bold;
     font-size: 16px;
     font-weight: bold;
     /*border-radius: 25px;*/
@@ -132,7 +133,7 @@ button:hover {
 #battery {
     background-color: rgba(23, 70, 94, 1.0);
     color: #6dbabf;
-    font-family: JetBrains Mono NL;
+    font-family: JetBrains Mono NF;
     font-size: 15px;
     font-weight: bold;
     /*border-radius: 25px;*/    

@@ -6,7 +6,7 @@
     "spacing": -0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    "modules-center": ["hyprlandw/window"],
+    "modules-center": ["hyprlands/window"],
     "modules-right": ["tray", "custom/arrow3", "pulseaudio", "custom/arrow2", "network", "custom/arrow1", "backlight", "keyboard-state", "sway/language", "custom/arrow2", "battery", "battery#bat2", "custom/arrow1", "clock"],
     // Modules configuration
      "wlr/workspaces": {
@@ -16,19 +16,20 @@
          "on-click": "activate",
          "format": "{icon}",
          "format-icons": {
-             "1": "𝕀",
-             "2": "𝕀𝕀",
-             "3": "𝕀𝕀𝕀",
-             "4": "𝕀𝕍",
-             "5": "𝕍",
-             "6": "𝕍𝕀",
-             "7": "𝕍𝕀𝕀",
-             "8": "𝕍𝕀𝕀𝕀",
+             "1": "I",
+             "2": "II",
+             "3": "III",
+             "4": "IV",
+             "5": "V",
+             "6": "VI",
+             "7": "VII",
+             "8": "",
              "9": "",
              "10": "",
-             "11": "",
+             "11": "󰗚",
              "12": "",
              "13": "",
+             "14": "",
          }
 
      },
@@ -91,7 +92,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d-%m-%Y} "
     },
      //"cpu": {
        //"format": "{usage}% ",
@@ -111,7 +112,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -119,7 +120,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% {icon} ",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
@@ -132,19 +133,20 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-wifi": "{essid} ({signalStrength}%)  ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰲚 ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰲚 ",
+        "format-linked": "{ifname} (No IP) 󰲚 ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}% {icon}  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "  {icon}  {format_source}",
+        "format-muted": "   {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -156,7 +158,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol-qt"
     },
 
 	"custom/arrow1": {
