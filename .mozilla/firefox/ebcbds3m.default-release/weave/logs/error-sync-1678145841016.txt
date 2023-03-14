@@ -1,0 +1,48 @@
+1678145393903	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1678145803701	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678145814108	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678145839651	Sync.Service	DEBUG	User-Agent: Firefox/110.0.1 (Linux x86_64) FxSync/1.112.0.20230228201553.desktop
+1678145839651	Sync.Service	INFO	Starting sync at 2023-03-06 23:37:19 in browser session Od_BRX_2byGZ
+1678145839652	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1678145839657	Sync.Status	INFO	Resetting Status.
+1678145839657	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1678145839658	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1678145839658	FirefoxAccounts	DEBUG	getOAuthToken enter
+1678145839659	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1678145839659	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1678145839660	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1678145839928	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections
+1678145839930	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1678145840283	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1678145840284	Sync.Service	DEBUG	Fetching global metadata record
+1678145840284	Sync.Service	DEBUG	Weave Version: 1.112.0 Local Storage: 5 Remote Storage: 5
+1678145840284	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1678145840284	Sync.Service	INFO	Testing info/collections: {"tabs":1678145794.8,"history":1678145393.74,"meta":1678107413.18,"bookmarks":1678141727.55,"crypto":1678107048.02,"addons":1678118718.12,"extension-storage":1678119829.57,"forms":1678142504.41,"clients":1678145548.13,"prefs":1678121897.12}
+1678145840284	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1678107048.02
+1678145840284	Sync.Synchronizer	DEBUG	Refreshing client list.
+1678145840285	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1678145840466	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/clients?full=1&limit=1000
+1678145840472	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 3 reconciled.
+1678145840472	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1678145840474	Sync.Engine.Clients	INFO	Uploading 0 outgoing records
+1678145840475	Sync.Synchronizer	INFO	Updating enabled engines: 3 clients.
+1678145840477	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1678145840478	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1678145840478	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1678145840897	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1678145841003	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?full=1&limit=1000
+1678145841009	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1678145841011	Sync.Status	DEBUG	Status for engine tabs: error.engine.reason.unknown_fail
+1678145841012	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1678145841012	Sync.ErrorHandler	DEBUG	tabs was interrupted due to the application shutting down
+1678145841012	Sync.Synchronizer	INFO	tabs was interrupted by shutdown; no other engines will sync
+1678145841012	Sync.Synchronizer	INFO	Aborting sync for failure in tabs
+1678145841012	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1678145841012	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1678145841012	Sync.Synchronizer	INFO	Sync completed at 2023-03-06 23:37:21 after 1.36 secs.
+1678145841013	Sync.Declined	DEBUG	Handling remote declined: ["passwords","creditcards"]
+1678145841013	Sync.Declined	DEBUG	Handling local declined: ["passwords","creditcards"]
+1678145841013	Sync.Declined	DEBUG	Declined changed? false
+1678145841013	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1678145841013	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1678145841014	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)

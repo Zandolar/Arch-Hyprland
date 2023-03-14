@@ -1,0 +1,86 @@
+1678111801102	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1678112401104	Sync.Service	DEBUG	User-Agent: Firefox/110.0.1 (Linux x86_64) FxSync/1.112.0.20230228201553.desktop
+1678112401104	Sync.Service	INFO	Starting sync at 2023-03-06 14:20:01 in browser session 2cImCOzvZdZ9
+1678112401104	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1678112401106	Sync.Status	INFO	Resetting Status.
+1678112401106	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1678112401106	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1678112401106	FirefoxAccounts	DEBUG	getOAuthToken enter
+1678112401107	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1678112401107	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1678112401107	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1678112401744	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections
+1678112401745	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1678112401981	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1678112401982	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1678112401982	Sync.Service	DEBUG	Fetching global metadata record
+1678112401982	Sync.Service	DEBUG	Weave Version: 1.112.0 Local Storage: 5 Remote Storage: 5
+1678112401982	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1678112401982	Sync.Service	INFO	Testing info/collections: {"tabs":1678112336.29,"forms":1678111800.16,"history":1678111892.6,"crypto":1678107048.02,"addons":1678109699.56,"bookmarks":1678110287.86,"extension-storage":1678107086.38,"prefs":1678109699.03,"clients":1678111689.99,"meta":1678107413.18}
+1678112401982	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1678107048.02
+1678112401982	Sync.Synchronizer	DEBUG	Refreshing client list.
+1678112401983	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1678112401983	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1678112402281	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/clients?full=1&limit=1000
+1678112402284	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 3 reconciled.
+1678112402284	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1678112402285	Sync.Engine.Clients	INFO	Uploading 0 outgoing records
+1678112402285	Sync.Synchronizer	INFO	Updating enabled engines: 3 clients.
+1678112402286	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1678112402287	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1678112402287	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1678112402290	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1678112402642	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?full=1&limit=1000
+1678112402646	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1678112402647	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1678112402648	Sync.Engine.Tabs	INFO	Posting 1 records of 2219 bytes with batch=true
+1678112402648	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1678112402649	Sync.Collection	DEBUG	POST Length: 2219
+1678112403009	Sync.Collection	DEBUG	POST fail 503 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?batch=true&commit=true
+1678112403009	Sync.Collection	WARN	POST request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?batch=true&commit=true failed with status 503
+1678112403009	Sync.Engine.Tabs	DEBUG	Uploading records failed: 503
+1678112403009	Sync.ErrorHandler	DEBUG	Got Retry-After: 3600
+1678112403009	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.serverMaintenance
+1678112403009	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1678112403009	Sync.SyncScheduler	DEBUG	Got backoff notification: 3600000ms
+1678112403009	Sync.SyncScheduler	DEBUG	Fuzzed minimum next sync: 1678116003009
+1678112403009	Sync.Status	DEBUG	Status for engine tabs: error.engine.reason.record_upload_fail
+1678112403009	Sync.Status	DEBUG	Status.service: error.sync.failed => error.sync.failed_partial
+1678112403009	Sync.Collection	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:230:21) JS Stack trace: _processResponse/<@resource.js:230:21
+get@sys.mjs:54:51
+format@sys.mjs:640:19
+formatText@sys.mjs:569:44
+format@sys.mjs:587:12
+append@sys.mjs:680:37
+append@logmanager.js:149:44
+log@sys.mjs:377:16
+debug@sys.mjs:397:10
+observe@policies.js:882:21
+observe@observers.js:133:21
+notify@observers.js:85:18
+notify@util.js:194:19
+WrappedNotify@util.js:204:17
+1678112403009	Sync.Collection	DEBUG	Parse fail: Response body starts: <html>
+<head><title>503 Service Unavailable</title></head>
+<body bgcolor="white">
+<center><h1>503 Se
+1678112403009	Sync.ErrorHandler	DEBUG	tabs failed: ({data:"<html>\n<head><title>503 Service Unavailable</title></head>\n<body bgcolor=\"white\">\n<center><h1>503 Service Cloudy: Try again later. </h1></center>\n</body>\n</html>\n", url:"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?batch=true&commit=true", status:503, success:false, headers:{'alt-svc':"clear", 'content-length':"162", 'content-type':"text/html", date:"Mon, 06 Mar 2023 14:20:02 GMT", etag:"\"64058f95-a2\"", 'retry-after':"3600", server:"openresty/1.15.8.2", via:"1.1 google", 'x-firefox-spdy':"h2"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+        return undefined;
+      }, failureCode:"error.engine.reason.record_upload_fail"})
+1678112403010	Sync.Synchronizer	INFO	Aborting sync for failure in tabs
+1678112403010	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1678112403010	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1678112403010	Sync.Synchronizer	INFO	Sync completed at 2023-03-06 14:20:03 after 1.90 secs.
+1678112403011	Sync.Declined	DEBUG	Handling remote declined: ["passwords","creditcards"]
+1678112403011	Sync.Declined	DEBUG	Handling local declined: ["passwords","creditcards"]
+1678112403011	Sync.Declined	DEBUG	Declined changed? false
+1678112403011	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1678112403011	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1678112403011	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 4042501.355829887 ms.
+1678112403011	Sync.SyncScheduler	DEBUG	Next sync in 4042501.355829887 ms. (why=client-backoff-schedule)

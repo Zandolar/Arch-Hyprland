@@ -1,12 +1,17 @@
 #!/bin/bash
 
-cd ~
-find ~/Arch-Hyprland -mindepth 1 -depth -type d -printf "%P\n" | while read dir; do mkdir -p "$dir"; done
-find ~/Arch-Hyprland -type f -printf "%P\n" | while read file; do ln -s "~/Arch-Hyprland/$file" "$file"; done
+ln -s ~/Arch-Hyprland/* ~
+ln -sf ~/Arch-Hyprland/.config/* ~/.config
+ln -sf ~/Arch-Hyprland/.firedragon ~/.firedragon
+ln -sf ~/Arch-Hyprland/.librewolf ~/.librewolf
+ln -sf ~/Arch-Hyprland/DoomEmacs ~/DoomEmacs
+ln -sf ~/Arch-Hyprland/Spacemacs ~/Spacemacs
+ln -sf ~/Arch-Hyprland/.emacs.d ~/.emacs.d
+ln -sf ~/Arch-Hyprland/.mozilla ~/.mozilla
+ln -sf ~/Arch-Hyprland/.librewolf ~/.librewolf
+ln -sf ~/Arch-Hyprland/.firedragon ~/.firedragon
 
-#ln -s ~/Arch-Hyprland/* ~
-#ln -s ~/Arch-Hyprland/.config/* ~/.config
-#ln -s ~/Arch-Hyprland/.emacs.d/
-cp -s ~/Arch-Hyprland/.local/share/icons/* ~/.local/share/icons
 sudo cp -r ~/Arch-Hyprland/Breeze-Noir-Dark /usr/share/sddm/themes
+mkdir ~/Pictures
+cp ~/bluewallpaper.png ~/Pictures/wallpaper.png
 sudo cp ~/Arch-Hyprland/hyprland-wrapped.desktop /usr/share/wayland-sessions

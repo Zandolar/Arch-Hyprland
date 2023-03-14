@@ -1,0 +1,38 @@
+1678659268230	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1678659269223	Sync.RemoteTabs	INFO	Generating tab list with filter
+1678659269236	Sync.RemoteTabs	DEBUG	Processing client: {"id":"-Qs56WlLZwt8","type":"client","name":"Matt’s Firefox on DESKTOP-201L8FL","clientType":"desktop","lastModified":1678659208550,"tabs":[]}
+1678659269237	Sync.RemoteTabs	DEBUG	Processing client: {"id":"bd6565125699b458bd44a45054582543","type":"client","name":"Firefox on samsung SM-N976B","clientType":"phone","lastModified":1678654732510,"tabs":[]}
+1678659269237	Sync.RemoteTabs	INFO	Final tab list has 2 clients with 11 tabs.
+1678659272453	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1678659273178	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1678659276466	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1678659276471	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1678659276698	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1678659276899	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1678659277459	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1678659277461	Sync.Engine.Tabs	INFO	Posting 1 records of 1003 bytes with batch=true
+1678659277461	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1678659277462	Sync.Collection	DEBUG	POST Length: 1003
+1678659277698	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/tabs?batch=true&commit=true
+1678659277699	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1678659374358	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678659374397	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1678659374397	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1678659374397	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1678659374398	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678659376398	Sync.Service	DEBUG	User-Agent: Firefox/110.0.1 (Linux x86_64) FxSync/1.112.0.20230311000820.desktop
+1678659376398	Sync.Service	INFO	Starting sync at 2023-03-12 22:16:16 in browser session bbAdpxgQkBS7
+1678659376398	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1678659376402	Sync.Status	INFO	Resetting Status.
+1678659376402	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1678659376403	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1678659376403	FirefoxAccounts	DEBUG	getOAuthToken enter
+1678659376403	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1678659376403	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1678659376404	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1678659379348	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678659381044	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1678659382399	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1678659382399	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1678659382399	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1678659382402	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
