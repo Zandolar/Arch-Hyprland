@@ -1,2 +1,5 @@
-https:fonts.gstatic.com:443:.:^partitionKey=%28http%2Clocalhost%2C5055%29:3	0	19430	https:fonts.gstatic.com:443:fonts.gstatic.com:443::n:1681419965:h3:y:1678827959:n:^partitionKey=%28http%2Clocalhost%2C5055%29:|n:y:
-https:image.tmdb.org:443:.:^partitionKey=%28http%2Clocalhost%2C5055%29:3	0	19430	https:image.tmdb.org:443:image.tmdb.org:443::n:1678827997:h3:n:1678827959:n:^partitionKey=%28http%2Clocalhost%2C5055%29:|n:y:
+https:fonts.gstatic.com:443:.:^partitionKey=%28http%2Clocalhost%2C5055%29:3	0	19434	https:fonts.gstatic.com:443:fonts.gstatic.com:443::n:1681720470:h3:y:1679128466:n:^partitionKey=%28http%2Clocalhost%2C5055%29:|n:y:
+https:cdn.jsdelivr.net:443:.::3	0	19434	https:cdn.jsdelivr.net:443:cdn.jsdelivr.net:443::n:1679215214:h3:y:1679128466:n::|n:y:
+https:versioncheck-bg.addons.mozilla.org:443:.::3	1	19435	https:versioncheck-bg.addons.mozilla.org:443:versioncheck-bg.addons.mozilla.org:443::n:1681854287:h3:y:1679128466:n::|n:y:
+https:www.imdb.com:443:.:^partitionKey=%28https%2Cimdb.com%29:3	0	19435	https:www.imdb.com:443:www.imdb.com:443::n:1679292893:h3:y:1679128466:n:^partitionKey=%28https%2Cimdb.com%29:|n:y:
+https:ublockorigin.pages.dev:443:.::3	0	19434	https:ublockorigin.pages.dev:443:ublockorigin.pages.dev:443::n:1679214972:h3:y:1679128466:n::|n:y:

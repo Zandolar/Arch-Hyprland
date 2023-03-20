@@ -1,0 +1,63 @@
+1679058021618	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1679058077025	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1679058077026	Sync.Service	DEBUG	User-Agent: Firefox/111.0 (Linux x86_64) FxSync/1.113.0.20230313175713.desktop
+1679058077026	Sync.Service	INFO	Starting sync at 2023-03-17 13:01:17 in browser session LG68FwJtarIG
+1679058077027	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1679058077034	Sync.Status	INFO	Resetting Status.
+1679058077034	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1679058077035	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679058099531	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058099601	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1679058099601	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1679058099601	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1679058099602	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058101602	Sync.Service	DEBUG	User-Agent: Firefox/111.0 (Linux x86_64) FxSync/1.113.0.20230313175713.desktop
+1679058101602	Sync.Service	INFO	Starting sync at 2023-03-17 13:01:41 in browser session LG68FwJtarIG
+1679058101603	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:54:5) JS Stack trace: LockException@util.js:54:5
+throwLockException@util.js:138:11
+WrappedLock@util.js:152:15
+_lockedSync@service.js:1372:6
+sync/<@service.js:1336:18
+WrappedCatch@util.js:123:27
+sync@service.js:1337:7
+1679058101603	Sync.Service	INFO	Cannot start sync: already syncing?
+1679058104614	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058106569	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058176149	Sync.RemoteTabs	INFO	Generating tab list with filter
+1679058176172	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1679058289013	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1679058289014	Sync.Service	DEBUG	User-Agent: Firefox/111.0 (Linux x86_64) FxSync/1.113.0.20230313175713.desktop
+1679058289014	Sync.Service	INFO	Starting sync at 2023-03-17 13:04:49 in browser session LG68FwJtarIG
+1679058289015	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:54:5) JS Stack trace: LockException@util.js:54:5
+throwLockException@util.js:138:11
+WrappedLock@util.js:152:15
+_lockedSync@service.js:1372:6
+sync/<@service.js:1336:18
+WrappedCatch@util.js:123:27
+sync@service.js:1337:7
+1679058289015	Sync.Service	INFO	Cannot start sync: already syncing?
+1679058309379	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058309436	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1679058309436	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1679058309436	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1679058309437	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058311437	Sync.Service	DEBUG	User-Agent: Firefox/111.0 (Linux x86_64) FxSync/1.113.0.20230313175713.desktop
+1679058311437	Sync.Service	INFO	Starting sync at 2023-03-17 13:05:11 in browser session LG68FwJtarIG
+1679058311438	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:54:5) JS Stack trace: LockException@util.js:54:5
+throwLockException@util.js:138:11
+WrappedLock@util.js:152:15
+_lockedSync@service.js:1372:6
+sync/<@service.js:1336:18
+WrappedCatch@util.js:123:27
+sync@service.js:1337:7
+1679058311438	Sync.Service	INFO	Cannot start sync: already syncing?
+1679058315526	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058317132	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1679058392778	Sync.Resource	ERROR	Request timed out after 300000ms. Aborting.
+1679058392778	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: AbortError: The operation was aborted.  Stack trace: _doRequest/timeoutId<()@resource://services-sync/resource.js:189
+notify()@resource://gre/modules/Timer.sys.mjs:49
+1679058392778	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1679058392779	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1679058392779	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.js :: _doRequest :: line 199"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.js:199
+1679058392780	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1679058392785	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.js :: _doRequest :: line 199"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.js:199
