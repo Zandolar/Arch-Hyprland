@@ -7,9 +7,9 @@
  **/
 
 * {
-    background:     rgba ( 55, 66, 82, 50% );
-    background2:    rgba ( 55, 66, 82, 100% );
-    background-alt: rgba ( 4, 48, 75, 90% );
+    background:     rgba ( 55, 66, 82, 30% );
+    background2:    rgba ( 55, 66, 82, 80% );
+    background-alt: rgba ( 4, 48, 75, 100% );
     foreground:     #6dbabfFF;
     selected:       #6dbabfFF;
     active:         #00FF00FF;

@@ -9,6 +9,6 @@ ln -sf ~/Arch-Hyprland/.mozilla ~/.mozilla
 ln -sf ~/Arch-Hyprland/.librewolf ~/.librewolf
 ln -sf ~/Arch-Hyprland/.firedragon ~/.firedragon
 
-sudo cp -r ~/Arch-Hyprland/Breeze-Noir-Dark /usr/share/sddm/themes
-mkdir ~/Pictures
-cp ~/bluewallpaper.png ~/Pictures/wallpaper.png
+#sudo cp -r ~/Arch-Hyprland/Breeze-Noir-Dark /usr/share/sddm/themes
+#mkdir ~/Pictures
+#cp ~/bluewallpaper.png ~/Pictures/wallpaper.png

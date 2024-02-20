@@ -1,0 +1,67 @@
+1708228846193	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1708228847095	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398932 - NS_ERROR_NET_HTTP3_PROTOCOL_ERROR
+1708228847095	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_HTTP3_PROTOCOL_ERROR\"  nsresult: \"0x804b0054 (NS_ERROR_NET_HTTP3_PROTOCOL_ERROR)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1708228849153	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1708228850703	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1708229446194	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1708229446194	Sync.Service	INFO	Starting sync at 2024-02-18 04:10:46 in browser session J1UDb1qaEa-C
+1708229446194	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1708229446196	Sync.Status	INFO	Resetting Status.
+1708229446196	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1708229446196	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1708229446196	FirefoxAccounts	DEBUG	getOAuthToken enter
+1708229446197	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1708229446197	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1708229446197	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1708229446376	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections
+1708229446376	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1708229446387	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1708229446519	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/configuration
+1708229446519	Sync.Service	DEBUG	Fetching global metadata record
+1708229446519	Sync.Service	DEBUG	Weave Version: 1.124.0 Local Storage: 5 Remote Storage: 5
+1708229446519	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1708229446519	Sync.Service	INFO	Testing info/collections: {"clients":1708206636.68,"passwords":1700073909.31,"crypto":1678107048.02,"meta":1678991647.58,"prefs":1707804108.58,"bookmarks":1704873377.53,"creditcards":1706770914.6}
+1708229446519	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1678107048.02
+1708229446519	Sync.Synchronizer	DEBUG	Refreshing client list.
+1708229446519	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1708229446520	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1708229446679	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/storage/clients?full=1&limit=1000
+1708229446682	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 8 reconciled.
+1708229446682	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1708229446683	Sync.Engine.Clients	INFO	Hiding stale client 3VHvAaAZz3nV with age 4229765.419999838
+1708229446683	Sync.Engine.Clients	INFO	Hiding stale client CrFgBaVveRJd with age 4229765.419999838
+1708229446683	Sync.Engine.Clients	INFO	Hiding stale client J8EhmJSA_3la with age 4229765.419999838
+1708229446683	Sync.Engine.Clients	INFO	Hiding stale client LpSxcJJxgG5V with age 4229765.419999838
+1708229446683	Sync.Engine.Clients	INFO	Uploading 0 outgoing records
+1708229446683	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1708229446684	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1708229446684	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1708229446684	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1708229446690	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1708229446690	Sync.Engine.Passwords	INFO	Uploading 0 outgoing records
+1708229446691	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID gE6TXXLE4DOy matches existing
+1708229446692	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1708229446692	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1708229446693	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1708229446694	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1708229446695	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1708229446695	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1708229446696	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 3.431ms
+1708229446696	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1708229446696	Sync.Engine.Bookmarks	INFO	Uploading 0 outgoing records
+1708229446696	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1708229446697	Sync.Engine.CreditCards	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1708229446697	Sync.Engine.CreditCards	INFO	Uploading 0 outgoing records
+1708229446697	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1708229446697	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1708229446697	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1708229446697	Sync.Doctor	INFO	Skipping check of creditcards - disabled via preferences
+1708229446697	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1708229446697	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1708229446697	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1708229446697	Sync.Synchronizer	INFO	Sync completed at 2024-02-18 04:10:46 after 0.50 secs.
+1708229446697	Sync.Declined	DEBUG	Handling remote declined: ["addons","tabs","forms","history"]
+1708229446697	Sync.Declined	DEBUG	Handling local declined: ["addons","tabs","forms","history"]
+1708229446697	Sync.Declined	DEBUG	Declined changed? false
+1708229446697	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1708229446698	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)

@@ -35,3 +35,15 @@ true
 0
 true
 #
+
+https://forums.torrentleech.org/
+https://forums.torrentleech.org/service-worker-4b96e96353c7701570ebc0b912a158e3a0dac46aee63394386e67193c430802d.js
+true
+{47dccd35-826b-4d60-8f72-3b782d3e9cec}
+0
+1682368832392560
+1682368832392769
+1682368831971754
+0
+true
+#

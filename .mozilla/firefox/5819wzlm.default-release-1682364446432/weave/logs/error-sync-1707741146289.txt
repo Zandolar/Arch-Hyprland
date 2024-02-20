@@ -1,0 +1,74 @@
+1707740152393	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1707740435846	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1707740440605	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1707741130466	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1707741130467	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1707741130467	Sync.Service	INFO	Starting sync at 2024-02-12 12:32:10 in browser session ak6aAvr5f9EA
+1707741130467	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1707741130470	Sync.Status	INFO	Resetting Status.
+1707741130470	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1707741130471	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1707741130471	FirefoxAccounts	DEBUG	getOAuthToken enter
+1707741130471	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1707741130471	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1707741130472	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1707741142478	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1707741142478	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1707741142479	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1707741142480	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1707741142542	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1707741142542	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1707741142542	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1707741142543	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1707741142547	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1707741142547	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1707741143935	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1707741143935	Sync.Service	INFO	Starting sync at 2024-02-12 12:32:23 in browser session ak6aAvr5f9EA
+1707741143935	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1707741143936	Sync.Service	INFO	Cannot start sync: already syncing?
+1707741144543	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1707741144543	Sync.Service	INFO	Starting sync at 2024-02-12 12:32:24 in browser session ak6aAvr5f9EA
+1707741144543	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1707741144543	Sync.Service	INFO	Cannot start sync: already syncing?
+1707741145951	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1707741145951	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1707741145953	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1707741145953	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1707741145954	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1707741145954	Sync.Service	INFO	Starting sync at 2024-02-12 12:32:25 in browser session ak6aAvr5f9EA
+1707741145954	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1707741145954	Sync.Service	INFO	Cannot start sync: already syncing?
+1707741146286	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections
+1707741146286	Sync.Service	DEBUG	Fetching global metadata record
+1707741146286	Sync.Service	DEBUG	Weave Version: 1.124.0 Local Storage: 5 Remote Storage: 5
+1707741146286	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1707741146287	Sync.Service	INFO	Testing info/collections: {"bookmarks":1704873377.53,"creditcards":1706770914.6,"meta":1678991647.58,"crypto":1678107048.02,"clients":1707735552.52,"prefs":1707258421.8,"passwords":1700073909.31}
+1707741146287	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1678107048.02
+1707741146287	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1707741146287	Sync.Synchronizer	INFO	Syncing specified engines: ["tabs"]
+1707741146287	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1707741146287	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1707741146287	Sync.Synchronizer	INFO	Sync completed at 2024-02-12 12:32:26 after 15.82 secs.
+1707741146287	Sync.Declined	DEBUG	Handling remote declined: ["addons","tabs","forms","history"]
+1707741146287	Sync.Declined	DEBUG	Handling local declined: ["addons","tabs","forms","history"]
+1707741146287	Sync.Declined	DEBUG	Declined changed? false
+1707741146288	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1707741146288	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)

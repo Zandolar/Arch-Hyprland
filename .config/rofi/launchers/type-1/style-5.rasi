@@ -24,7 +24,7 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 * {
-    border-colour:               var(background2);
+    border-colour:               var(background-alt);
     handle-colour:               var(selected);
     background-colour:           var(background);
     foreground-colour:           var(foreground);
@@ -65,7 +65,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               20px;
     border-color:                @border-colour;
     cursor:                      "default";
     /* Backgroud Colors */
@@ -86,8 +86,8 @@ mainbox {
     spacing:                     10px;
     margin:                      0px;
     padding:                     30px;
-    border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
+    border:                      3px solid;
+    border-radius:               20px 20px 20px 20px;
     border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
@@ -100,7 +100,7 @@ inputbar {
     margin:                      3px;
     padding:                     3px;
     border:                      4px solid;
-    border-radius:               0px;
+    border-radius:               15px;
     border-color:                @normal-background;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;

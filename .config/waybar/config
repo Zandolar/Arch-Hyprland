@@ -5,11 +5,11 @@
     // "width": 1280, // Waybar width
     "spacing": -0, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["idle_inhibitor", "wlr/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    "modules-left": ["idle_inhibitor", "hyprland/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": ["hyprlands/window"],
     "modules-right": ["tray", "custom/arrow3", "pulseaudio", "custom/arrow2", "network", "custom/arrow1", "backlight", "keyboard-state", "sway/language", "custom/arrow2", "battery", "battery#bat2", "custom/arrow1", "clock"],
     // Modules configuration
-     "wlr/workspaces": {
+     "hyprland/workspaces": {
      	 "sort-by-number": true,
          "disable-scroll": true,
          "all-outputs": true,
@@ -22,7 +22,7 @@
              "4": "IV",
              "5": "V",
              "6": "VI",
-             "7": "VII",
+             "7": "",
              "8": "",
              "9": "",
              "10": "",

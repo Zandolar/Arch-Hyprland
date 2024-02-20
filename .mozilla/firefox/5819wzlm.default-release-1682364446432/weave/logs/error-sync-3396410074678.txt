@@ -1,0 +1,27 @@
+1698195220959	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1698195449151	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1698195449151	Sync.Service	DEBUG	User-Agent: Firefox/119.0 (Linux x86_64) FxSync/1.121.0.20231023160744.desktop
+1698195449151	Sync.Service	INFO	Starting sync at 2023-10-25 01:57:29 in browser session Z4TcIDswYj-V
+1698195449152	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1698195449154	Sync.Status	INFO	Resetting Status.
+1698195449154	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1698195449155	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1698195449155	FirefoxAccounts	DEBUG	getOAuthToken enter
+1698195449155	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1698195449155	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1698195449155	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+3396410066502	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+3396410066502	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+3396410066504	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+3396410066505	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+3396410066673	Sync.SyncScheduler	DEBUG	Woke from sleep.
+3396410066673	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+3396410066673	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+3396410071821	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+3396410071821	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+3396410071823	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+3396410073726	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+3396410074676	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+3396410074676	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+3396410074676	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+3396410074678	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available

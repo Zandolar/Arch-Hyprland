@@ -1,0 +1,30 @@
+1708161162540	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1708161230496	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1708161230496	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1708161230496	Sync.Service	INFO	Starting sync at 2024-02-17 09:13:50 in browser session J1UDb1qaEa-C
+1708161230497	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1708161230499	Sync.Status	INFO	Resetting Status.
+1708161230499	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1708161230500	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1708206010475	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1708206010475	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1708206010481	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1708206010495	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1708206010568	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1708206010568	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1708206010568	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1708206010570	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1708206012571	Sync.Service	DEBUG	User-Agent: Firefox/122.0.1 (Linux x86_64) FxSync/1.124.0.20240206142439.desktop
+1708206012571	Sync.Service	INFO	Starting sync at 2024-02-17 21:40:12 in browser session J1UDb1qaEa-C
+1708206012571	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1708206012571	Sync.Service	INFO	Cannot start sync: already syncing?
+1708206013694	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1708206013694	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1708206013695	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1708206013697	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
