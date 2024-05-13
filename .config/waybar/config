@@ -31,6 +31,7 @@
              "13": "",
              "14": "",
              "15": "",
+             "16": "",
          }
 
      },
@@ -140,7 +141,7 @@
         "format-linked": "{ifname} (No IP) 󰲚 ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "nm-connection-editor"
+        "on-click": "pypr toggle network"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -159,7 +160,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol-qt"
+        "on-click": "pypr toggle volume"
     },
 
 	"custom/arrow1": {

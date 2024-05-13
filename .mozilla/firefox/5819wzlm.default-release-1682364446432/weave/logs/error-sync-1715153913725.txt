@@ -1,0 +1,80 @@
+1715151592028	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715153895224	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1715153895224	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715153895224	Sync.Service	INFO	Starting sync at 2024-05-08 08:38:15 in browser session -RKgTfPwPCqE
+1715153895224	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715153895228	Sync.Status	INFO	Resetting Status.
+1715153895228	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1715153895228	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1715153895228	FirefoxAccounts	DEBUG	getOAuthToken enter
+1715153895228	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1715153895228	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1715153895229	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1715153895229	Sync.SyncAuthManager	INFO	Getting sync key
+1715153895230	FirefoxAccounts	DEBUG	getOAuthToken enter
+1715153895230	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1715153895230	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1715153895230	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1715153895230	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1715153895230	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1715153895230	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1715153905375	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1715153905375	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715153905378	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715153905381	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715153905587	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1715153905588	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1715153905588	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1715153905589	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715153907589	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715153907589	Sync.Service	INFO	Starting sync at 2024-05-08 08:38:27 in browser session -RKgTfPwPCqE
+1715153907590	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715153907590	Sync.Service	INFO	Cannot start sync: already syncing?
+1715153910820	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715153910820	Sync.Service	INFO	Starting sync at 2024-05-08 08:38:30 in browser session -RKgTfPwPCqE
+1715153910820	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715153910820	Sync.Service	INFO	Cannot start sync: already syncing?
+1715153912983	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1715153912983	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1715153912985	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715153912986	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715153912987	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715153912987	Sync.Service	INFO	Starting sync at 2024-05-08 08:38:32 in browser session -RKgTfPwPCqE
+1715153912988	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715153912988	Sync.Service	INFO	Cannot start sync: already syncing?
+1715153913503	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398932 - NS_ERROR_NET_HTTP3_PROTOCOL_ERROR
+1715153913504	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1715153913504	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1715153913504	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1715153913504	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1715153913721	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections
+1715153913721	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed with status 401
+1715153913721	Sync.Service	INFO	Logging out
+1715153913721	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1715153913721	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1715153913722	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1715153913722	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1715153913722	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Wed, 08 May 2024 07:38:34 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1715153914.80"},"obj":0}
+1715153913722	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1715153913722	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1715153913725	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Wed, 08 May 2024 07:38:34 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1715153914.80"},"obj":0}

@@ -1,0 +1,19 @@
+1715360567357	Sync.LogManager	DEBUG	Flushing file log
+1715360567358	Sync.LogManager	DEBUG	Log cleanup threshold time: 1714496567358
+1715360567361	Sync.LogManager	DEBUG	Done deleting files.
+1715360567527	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1715360567527	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1715360567527	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1715360567527	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715360569528	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715360569528	Sync.Service	INFO	Starting sync at 2024-05-10 18:02:49 in browser session 7bKlYZWbFGFb
+1715360569528	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715360569529	Sync.Status	INFO	Resetting Status.
+1715360569529	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1715360569530	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1715360569533	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1715360569533	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1715360569533	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1715360569533	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1715360569533	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1715360569534	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

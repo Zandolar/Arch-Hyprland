@@ -1,0 +1,48 @@
+1715361832005	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715362175533	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1715362175534	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715362175534	Sync.Service	INFO	Starting sync at 2024-05-10 18:29:35 in browser session 7bKlYZWbFGFb
+1715362175534	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715362175536	Sync.Status	INFO	Resetting Status.
+1715362175536	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1715362175537	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1715362175537	FirefoxAccounts	DEBUG	getOAuthToken enter
+1715362175538	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1715362175538	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1715362175538	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1715362610391	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1715362610391	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715362610393	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715362610394	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715362610539	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1715362610540	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1715362610540	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1715362610540	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715362612541	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715362612542	Sync.Service	INFO	Starting sync at 2024-05-10 18:36:52 in browser session 7bKlYZWbFGFb
+1715362612542	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715362612542	Sync.Service	INFO	Cannot start sync: already syncing?
+1715362618650	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1715362618650	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1715362618652	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715362618653	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715362618653	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715362618653	Sync.Service	INFO	Starting sync at 2024-05-10 18:36:58 in browser session 7bKlYZWbFGFb
+1715362618654	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715362618654	Sync.Service	INFO	Cannot start sync: already syncing?
+1715362619839	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1715362619839	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1715362619840	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1715362619842	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available

@@ -1,0 +1,39 @@
+1715362619843	Sync.LogManager	DEBUG	Flushing file log
+1715362619844	Sync.LogManager	DEBUG	Log cleanup threshold time: 1714498619844
+1715362619847	Sync.LogManager	DEBUG	Done deleting files.
+1715362620271	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715362622058	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715362905466	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"Aborting due to channel inactivity.\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: abortTimeout :: line 374\"  data: no]"}
+1715363283600	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1715363283601	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715363283601	Sync.Service	INFO	Starting sync at 2024-05-10 18:48:03 in browser session 7bKlYZWbFGFb
+1715363283601	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715363283603	Sync.Status	INFO	Resetting Status.
+1715363283604	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1715363283604	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1715363283604	FirefoxAccounts	DEBUG	getOAuthToken enter
+1715363283605	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1715363283605	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1715363283605	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1715363576359	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1715363576359	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1715363576360	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1715363576362	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715363576526	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1715363576527	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1715363576527	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1715363576527	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1715363578528	Sync.Service	DEBUG	User-Agent: Firefox/125.0.3 (Linux x86_64) FxSync/1.127.0.20240503195641.desktop
+1715363578528	Sync.Service	INFO	Starting sync at 2024-05-10 18:52:58 in browser session 7bKlYZWbFGFb
+1715363578528	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1372:6
+sync/<@service.sys.mjs:1337:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1338:7
+1715363578529	Sync.Service	INFO	Cannot start sync: already syncing?
+1715363579860	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/204028242/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1715363579860	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1715363579861	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1715363579862	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available

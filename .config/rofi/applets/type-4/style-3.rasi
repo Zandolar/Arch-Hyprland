@@ -12,15 +12,19 @@ configuration {
     show-icons:                 false;
 }
 
+/* ---- Load pyal colors ---- */
+
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 13";
     background:                  rgba ( 55, 66, 82, 65% );
-    background-alt:              rgba ( 4, 48, 75, 95% );
-    foreground:                  #6dbabfFF;
-    selected:                    #389eb7;
-    active:                      #389eb7;
-    urgent:                      #fe7970;
+    background-alt:              @selected-active-background;
+    foreground:                  rgba ( 0, 0, 0, 60% );
+    selected:                    @selected-urgent-background;
+    active:                      @selected-normal-background;
+    urgent:                      @selected;
 }
 
 /*
@@ -64,7 +68,7 @@ inputbar {
     border-radius:               40px;
     border-color:                @selected;
     background-color:            transparent;
-    background-image:            url("/home/matt/Pictures/wallpaper.png", width);
+    background-image:            url("/home/matt/Arch-Hyprland/.config/rofi/.current_wallpaper", width);
     text-color:                  @foreground;
     children:                    [ "textbox-prompt-colon", "dummy", "prompt"];
 }
